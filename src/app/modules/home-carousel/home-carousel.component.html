@@ -1,0 +1,14 @@
+<div class='container_carousel'>
+    <ngb-carousel>
+        <ng-template *ngFor='let slide of imagesLeft' ngbSlide>
+            <img class='image_size' [src]='slide.src'>
+            <div class="carousel-caption">
+                <div class='slide_text'>{{slide.text}}</div>
+                <div> {{slide.author | uppercase}}</div>
+            </div>
+            <div class='logo_size'>
+                <img [src]='slide.logo'>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

@@ -1,0 +1,64 @@
+.row {
+    margin: 0;
+}
+.carousel-caption {
+    padding: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    bottom: 15%;
+    position: absolute;
+    text-align: left;
+    outline: none; //remove the blue glow that surrounds a selected span: unselectable
+}
+.image_size {
+    width: 100%;
+    object-fit: contain;
+}
+.carousel {
+    margin: 0;
+    outline: none; //remove the blue glow that surrounds a selected span: unselectable
+}
+.container_carousel {
+    padding: 0;
+   // pointer-events: none; // is to make this div not selectable.
+}
+.logo_size > img {
+    bottom: 20px;
+    max-height: 40px;
+    max-width: 60px;
+    left: 40px;
+    position: absolute;
+}
+.slide_text {
+    padding-bottom: 20px;
+}
+// to remove arrows: carousel-control
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    // display: none;
+    cursor: pointer;
+}
+.carousel-indicators {
+    right: 10px;
+    left: 60%;
+    margin-right: 0;
+}
+.carousel-indicators li {
+    //display: inline;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.carousel-indicators .active {
+    width: 13px;
+    height: 13px;
+    margin: 10px;
+    background-color: gray;
+    opacity: 1;
+}
